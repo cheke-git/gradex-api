@@ -1,4 +1,6 @@
-var config = require('npcp');
+var bunyan = require('bunyan'),
+  config = require('npcp');
+
 var base_url = config.baseurl + '/teachers';
 
 exports.bind_routes = function (server) {
@@ -13,6 +15,7 @@ exports.bind_routes = function (server) {
 };
 
 exports.index = function (req, res) {
+  req.log.info('testing index');
   res.json('ok');
 };
 

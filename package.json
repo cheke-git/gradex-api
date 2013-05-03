@@ -17,12 +17,13 @@
   "dependencies": {
     "restify": "~2.4.1",
     "mongoose": "~3.6.8",
-    "npcp": "~0.1.0-2"
+    "npcp": "~0.1.0-2",
+    "bunyan": "~0.21.1"
   },
   "config": {
     "port": 8080,
     "env": "dev",
-    "baseurl" : "",
+    "baseurl": "",
     "db": {
       "dev": {
         "uri": "mongodb://localhost/gradex"
