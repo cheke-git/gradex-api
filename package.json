@@ -1,0 +1,32 @@
+{
+  "name": "gradex-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "gradex-api",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erickrdch/gradex-api.git"
+  },
+  "author": "Erick Ruiz de Chavez",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "restify": "~2.4.1",
+    "mongoose": "~3.6.8",
+    "npcp": "~0.1.0-2"
+  },
+  "config": {
+    "port": 8080,
+    "env": "dev",
+    "baseurl" : "",
+    "db": {
+      "dev": {
+        "uri": "mongodb://localhost/gradex"
+      }
+    }
+  }
+}
